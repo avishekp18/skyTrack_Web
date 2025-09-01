@@ -1,6 +1,5 @@
 import { FiSunrise, FiSunset } from "react-icons/fi";
 import { TbSunHigh, TbSunLow } from "react-icons/tb";
-import { WiBarometer } from "react-icons/wi"; // Weather Icons
 import { FaEye, FaWind } from "react-icons/fa"; // Font Awesome
 
 

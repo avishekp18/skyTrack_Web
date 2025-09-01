@@ -19,8 +19,8 @@ const TemperatureAndDetails = ({ data }) => {
 	// Weather icon URL with fallback
 	const weatherIcon = data.weather && data.weather[0]?.icon;
 	const iconUrl = weatherIcon
-		? `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`
-		: "http://openweathermap.org/img/wn/01d@2x.png";
+		? `https://openweathermap.org/img/wn/${weatherIcon}@2x.png`
+		: "https://openweathermap.org/img/wn/01d@2x.png";
 
 	// Dynamic background gradient based on weather condition
 
@@ -68,7 +68,7 @@ const TemperatureAndDetails = ({ data }) => {
 						alt={data.weather[0]?.description || "weather icon"}
 						className="h-28 w-28 object-contain transition-transform duration-300 hover:scale-110"
 						onError={(e) => {
-							e.target.src = "http://openweathermap.org/img/wn/01d@2x.png";
+							e.target.src = "https://openweathermap.org/img/wn/01d@2x.png";
 						}}
 					/>
 					{/* <div className="absolute inset-0 bg-white/10 rounded-full blur-md -z-10" /> */}

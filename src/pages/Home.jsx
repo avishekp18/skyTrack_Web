@@ -109,7 +109,7 @@ const Home = () => {
     const BlackUniverseBackground = () => (
         <svg
             className="absolute inset-0 w-full h-full z-[-1]"
-            xmlns="http://www.w3.org/2000/svg"
+            xmlns="https://www.w3.org/2000/svg"
             preserveAspectRatio="xMidYMid slice"
             viewBox="0 0 800 600"
         >

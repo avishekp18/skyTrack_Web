@@ -45,7 +45,7 @@ const Forecast = ({ data, title }) => {
 							{item.temp}°C
 						</p>
 						<img
-							src={`http://openweathermap.org/img/wn/${item.icon}@2x.png`}
+							src={`https://openweathermap.org/img/wn/${item.icon}@2x.png`}
 							alt={item.description}
 							className="w-12 h-12 mx-auto my-2"
 						/>
