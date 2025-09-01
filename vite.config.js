@@ -3,5 +3,5 @@ const react = require("@vitejs/plugin-react");
 
 module.exports = defineConfig({
   plugins: [react()],
-  base: "/skyTrack_Web/", // ✅ must start and end with "/"
+  base: process.env.VITE_BASE_URL || "./",
 });

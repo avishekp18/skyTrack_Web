@@ -8,7 +8,11 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "build:github": "cross-env VITE_BASENAME=/skyTrack_Web/ VITE_BASE_URL=/skyTrack_Web/ vite build",
+    "build:netlify": "cross-env VITE_BASENAME=/ VITE_BASE_URL=./ vite build",
+    "deploy:github": "npm run build:github && gh-pages -d dist",
+    "deploy:netlify": "npm run build:netlify"
   },
   "dependencies": {
     "axios": "^1.11.0",
@@ -26,6 +30,7 @@
     "@types/react-dom": "^19.1.9",
     "@vitejs/plugin-react": "^5.0.2",
     "autoprefixer": "^10.4.21",
+    "cross-env": "^10.0.0",
     "eslint": "^9.34.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
