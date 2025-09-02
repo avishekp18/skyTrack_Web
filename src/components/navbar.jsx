@@ -76,17 +76,17 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link
-                            to="#"
+                        <a
+                            href="#forecast"
                             onClick={toggleMenu}
                             className="text-white text-lg hover:text-blue-300 transition"
                         >
                             Forecast
-                        </Link>
+                        </a>
                     </li>
                     <li>
                         <Link
-                            to="#"
+                            to="https://avishekpradhan.netlify.app/"
                             onClick={toggleMenu}
                             className="text-white text-lg hover:text-blue-300 transition"
                         >

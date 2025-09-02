@@ -194,7 +194,8 @@ const Home = () => {
                     </div>
                 )}
                 {forecast && !isLoading && !error && activeTab === 'forecast' && (
-                    <div className="bg-gray-200/10 backdrop-blur-xl rounded-2xl p-4 sm:p-6 md:p-8 shadow-xl border border-gray-400/0 animate-[slideUp_0.6s_ease-out]">
+                    <div id="forecast"
+                        className="bg-gray-200/10 backdrop-blur-xl rounded-2xl p-4 sm:p-6 md:p-8 shadow-xl border border-gray-400/0 animate-[slideUp_0.6s_ease-out]">
                         <ErrorBoundary>
                             <Forecast title="5-Day Forecast" data={forecast} />
                         </ErrorBoundary>
