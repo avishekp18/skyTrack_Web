@@ -14,7 +14,7 @@ const Home = () => {
     const [isRequestingPermission, setIsRequestingPermission] = useState(false);
 
     // Fetch weather by coordinates helper
-    const fetchWeatherByCoords = useCallback(async (lat, lon, cityLabel = 'Current Location') => {
+    const fetchWeatherByCoords = useCallback(async (lat, lon, cityLabel = 'your city') => {
         setIsLoading(true);
         setError(null);
 

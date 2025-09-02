@@ -1,11 +1,14 @@
 import { topCities } from "../constants/topCity";
 
+import { FaMapMarkerAlt } from "react-icons/fa"; // Font Awesome
+
+
 const TopButtons = ({ onSearchChange, currentLocation, locationPermission, onRequestLocation, isRequestingPermission }) => {
 	const handleCityClick = (city) => {
 		if (onSearchChange && city?.lat && city?.lon) {
 			onSearchChange({
 				value: `${city.lat} ${city.lon}`,
-				label: city.title || "Current Location",
+				label: city.title || "Your City",
 			});
 		}
 	};
@@ -59,7 +62,10 @@ const TopButtons = ({ onSearchChange, currentLocation, locationPermission, onReq
 							Loading...
 						</span>
 					) : (
-						"Current Location"
+						<>
+							<FaMapMarkerAlt className="w-5 h-5 text-grey-200" tooltipMessage="location" />
+
+						</>
 					)}
 				</button>
 				<span className="absolute hidden group-hover:block -top-10 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2 whitespace-nowrap z-[200]">
